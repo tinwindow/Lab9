@@ -8,47 +8,23 @@
 	 ];
 	
 var total = 0;
+var orderedList = document.getElementById("Grocery List");
 
 for (var i = 0; i < items.length; i++) {
   console.log(items[i].name, items[i].price);
+
+
   total = total + items[i].price;
+
+var listItem = document.createElement("li");
+  listItem.innerHTML = items[i].name + " $ " + items[i].price;
+  parent.orderedList.appendChild(listItem);
+
 }
 
 
-console.log("Your total is" + total + ".");
+ console.log("Your total is" + total + ".");
 
- document.getElementById("total").innerHTML = total;
-
-
- var orderedList = document.getElementById("Grocery List");
-
- var listItem = document.createElement("li");
- 
- listItem.innerHTML = "Cat Food, price: $17.50";
- parent.orderedList.appendChild(listItem);
-
- var listItem = document.createElement("li");
-
- listItem.innerHTML = "Catnip, price: $4.99";
- parent.orderedList.appendChild(listItem);
-
- var listItem = document.createElement("li");
-
- listItem.innerHTML = "Toilet Paper, price: $6.49";
- parent.orderedList.appendChild(listItem);
-
- var listItem = document.createElement("li");
-
- listItem.innerHTML = "Tissues, price: $1.79";
- parent.orderedList.appendChild(listItem);
-
- var listItem = document.createElement("li");
-
- listItem.innerHTML = "Star Trek Pizza Cutter, price: $20.00";
- parent.orderedList.appendChild(listItem);
-
-
-
-
+ var $el = ("#total").append($el) = total;
 
  
