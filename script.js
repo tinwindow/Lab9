@@ -25,6 +25,6 @@ var listItem = document.createElement("li");
 
  console.log("Your total is" + total + ".");
 
- var $el = ("#total").append($el) = total;
+ document.getElementById("total").innerHTML = total;
 
- 
+ num.toFixed(2);
